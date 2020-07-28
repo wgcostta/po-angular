@@ -358,6 +358,17 @@ export abstract class PoTableBaseComponent implements OnChanges {
    *
    * @description
    *
+   * Permite que seja adicionado um spinner loading no botão "Mostra mais".
+   *
+   * @default `false`
+   */
+  @Input('p-loading-show-more') @InputBoolean() loadingShowMore?: boolean = false;
+
+  /**
+   * @optional
+   *
+   * @description
+   *
    * Habilita em todas as colunas a opção de ordenação de dados. Caso a coluna seja do tipo 'data' ou 'dateTime' a
    * mesma deve respeitar os tipos de entrada definidos para que sejam ordenadas.
    *
